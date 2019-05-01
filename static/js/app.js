@@ -36,8 +36,8 @@ btnReset.on("click", function() {
 btn.on("click", function() {
   d3.event.preventDefault()
   // start with all data
-  var filteredData = data
-  var targetValue = ""
+  let filteredData = data
+  let targetValue = ""
   // only look at the first 4 filters (datetime, city, state and country)
   filters.slice(0,5).forEach(filter => {
     // Get the value property of the corresponding input element and convert to lower case
