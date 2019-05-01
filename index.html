@@ -30,26 +30,36 @@
         <div class="col-md-2">
           <aside class="filters">
             <div class="panel panel-default">
-              <select id="d3-dropdown">
-                <option value="datetime">Date/Time</option>
-                <option value="city">City</option>
-                <option value="state">State</option>
-                <option value="country">Country</option>
-                <option value="shape">Shape</option>
-              </select>
 
-              <!-- <div class="panel-heading">Filter Search</div> -->
+              <div class="panel-heading">Filter Search</div>
               <div class="panel-body">
                 <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
-                        <label for="date">Enter filter</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="Enter value">
+                        <label for="date">Enter a Date</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="city">Enter a City</label>
+                        <input class="form-control" id="city" type="text" placeholder="Benton">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="state">Enter a State</label>
+                        <input class="form-control" id="state" type="text" placeholder="MA">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="country">Enter a Country</label>
+                        <input class="form-control" id="country" type="text" placeholder="US">
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="shape">Enter a Shape</label>
+                        <input class="form-control" id="shape" type="text" placeholder="circle">
                       </li>
                     </ul>
                   </div>
                   <button id="filter-btn" type="submit" class="btn btn-default">Filter Table</button>
+                  <button id="reset-btn" type="submit" class="btn btn-default">Reset Form</button>
                 </form>
               </div>
             </div>
